@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+
+  --color-sand: var(--sand);
+  --color-bone: var(--bone);
+  --color-clay: var(--clay);
+  --color-walnut: var(--walnut);
+  --color-ink: var(--ink);
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-sans: "Fira Sans", system-ui, sans-serif;
+}
+
+:root {
+  --bone: oklch(0.985 0.005 85);
+  --sand: oklch(0.955 0.012 80);
+  --clay: oklch(0.785 0.04 75);
+  --walnut: oklch(0.52 0.045 60);
+  --ink: oklch(0.22 0.015 60);
+
+  --background: var(--bone);
+  --foreground: var(--ink);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --primary: var(--walnut);
+  --primary-foreground: var(--bone);
+  --secondary: var(--sand);
+  --secondary-foreground: var(--ink);
+  --muted: var(--sand);
+  --muted-foreground: oklch(0.45 0.025 65);
+  --accent: var(--clay);
+  --accent-foreground: var(--ink);
+  --border: oklch(0.9 0.015 80);
+}
+
+* {
+  border-color: var(--color-border);
+}
+html { -webkit-font-smoothing: antialiased; }
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: 0.005em;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-foreground);
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-walnut);
+}
