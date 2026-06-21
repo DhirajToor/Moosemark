@@ -5,10 +5,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const nav = [
-  { to: "/", label: "Journal" },
+  // { to: "/", label: "Journal" },
   { to: "/portfolio", label: "Portfolio" },
   { to: "/services", label: "Services" },
-  { to: "/about", label: "Atelier" },
+  // { to: "/about", label: "Atelier" },
   { to: "/contact", label: "Enquire" },
 ];
 

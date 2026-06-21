@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const hero = "/assets/hero-kitchen.jpg";
-const wardrobe = "/assets/portfolio-wardrobe.jpg";
-const library = "/assets/portfolio-library.jpg";
-const vanity = "/assets/portfolio-vanity.jpg";
-const detail = "/assets/detail-handle.jpg";
+const hero = "/assets/hero.jpeg";
+const wardrobe = "/assets/wardrobe.jpeg";
+const library = "/assets/library.jpeg";
+const vanity = "/assets/vanity.jpeg";
+const detail = "/assets/handle.jpeg";
 
 export const metadata: Metadata = {
   title: "Portfolio — Moosemark Cabinetry",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { src: hero, t: "The Alfriston Kitchen", year: "2025", loc: "East Sussex", tag: "Kitchen", w: "lg:col-span-8" },
-  { src: detail, t: "Walnut Pantry", year: "2025", loc: "Lewes", tag: "Detail", w: "lg:col-span-4" },
-  { src: library, t: "The Charleston Library", year: "2024", loc: "Firle", tag: "Library", w: "lg:col-span-5" },
-  { src: wardrobe, t: "Fluted Oak Wardrobe", year: "2024", loc: "Bloomsbury", tag: "Wardrobe", w: "lg:col-span-7" },
-  { src: vanity, t: "Stone & Oak Vanity", year: "2024", loc: "Brighton", tag: "Bathroom", w: "lg:col-span-6" },
-  { src: hero, t: "Plate-Rack Kitchen", year: "2023", loc: "Rye", tag: "Kitchen", w: "lg:col-span-6" },
+  { src: hero, t: " ", year: "2025", loc: " ", tag: " ", w: "lg:col-span-8" },
+  { src: detail, t: " ", year: "2025", loc: " ", tag: " ", w: "lg:col-span-4" },
+  { src: library, t: " ", year: "2024", loc: " ", tag: " ", w: "lg:col-span-5" },
+  { src: wardrobe, t: " ", year: "2024", loc: " ", tag: " ", w: "lg:col-span-7" },
+  { src: vanity, t: " ", year: "2024", loc: " ", tag: " ", w: "lg:col-span-6" },
+  { src: hero, t: " ", year: "2023", loc: " ", tag: " ", w: "lg:col-span-6" },
 ];
 
 export default function Portfolio() {

@@ -14,11 +14,11 @@ export function SiteFooter() {
         <FooterCol title="Studio" items={[
           { label: "Portfolio", to: "/portfolio" },
           { label: "Services", to: "/services" },
-          { label: "Atelier", to: "/about" },
+          // { label: "Atelier", to: "/about" },
         ]} />
         <FooterCol title="Contact" items={[
           { label: "Enquire", to: "/contact" },
-          { label: "info@moosemarkcabinetry.co", to: "/contact" },
+          { label: "info@moosemarkcabinetry.com", to: "/contact" },
           { label: "+1 548 333 9788", to: "/contact" },
         ]} />
         <div>

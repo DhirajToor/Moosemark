@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const hero = "/assets/hero-kitchen.jpg";
-const detail = "/assets/detail-handle.jpg";
-const wardrobe = "/assets/portfolio-wardrobe.jpg";
-const library = "/assets/portfolio-library.jpg";
-const vanity = "/assets/portfolio-vanity.jpg";
+const hero = "/assets/hero.jpeg";
+const detail = "/assets/logo.jpeg";
+const wardrobe = "/assets/wardrobe.jpeg";
+const library = "/assets/library.jpeg";
+const vanity = "/assets/vanity.jpeg";
 const workshop = "/assets/workshop.jpg";
 
 export const metadata: Metadata = {
@@ -26,20 +26,18 @@ export default function Home() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-5 pb-6 pt-10 sm:px-8">
           <div className="flex flex-wrap items-baseline justify-between gap-3 text-xs text-muted-foreground">
-            <span className="eyebrow">Vol. XVI · Edition 04</span>
+          
             <span>KItchner, ON — Friday, 19 June 2026</span>
-            <span className="eyebrow">A Cabinetmaker&apos;s Journal</span>
-          </div>
-        </div>
+            {/* <span className="eyebrow">A Cabinetmaker&apos;s Journal</span> */}
 
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 pb-16 sm:px-8 lg:grid-cols-[1.6fr_1fr] lg:gap-14">
+               <div className="mx-auto grid max-w-9xl gap-10 px-5 pb-16 sm:px-8      lg:gap-14">
           <div>
-            <p className="eyebrow">The Lede — Kitchens</p>
+          
             <h1 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
               Rooms built the slow way, by people who still remember how.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              For eighteen years we have made kitchens, libraries and wardrobes from solid oak, ash
+               We have made kitchens, libraries and wardrobes from solid oak, ash
               and walnut. Each piece is drawn by hand, joined in our KItchner workshop, and installed
               by the same craftsmen who built it.
             </p>
@@ -56,7 +54,7 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="space-y-5 lg:border-l lg:border-border lg:pl-10">
+          {/* <aside className="space-y-5 lg:border-l lg:border-border lg:pl-10">
             <p className="eyebrow">In this issue</p>
             <ul className="divide-y divide-border">
               {[
@@ -74,17 +72,21 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </aside>
+          </aside> */}
         </div>
 
+
+
+
+          </div>
+        </div>
+
+       
         <div className="mx-auto max-w-7xl px-5 pb-16 sm:px-8">
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={hero} alt="Bespoke oak kitchen with brass hardware, sunlit" className="aspect-[16/10] w-full object-cover" />
-            <figcaption className="mt-3 flex flex-wrap justify-between gap-2 text-xs text-muted-foreground">
-              <span>The Alfriston kitchen, finished in oil and wax.</span>
-              <span>Photograph — Tomas Hewitt</span>
-            </figcaption>
+       
           </figure>
         </div>
       </section>
@@ -147,9 +149,9 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {[
-              { src: wardrobe, t: "Fluted oak wardrobe", p: "Bloomsbury, London" },
-              { src: library, t: "Painted library with ladder", p: "Charleston Farmhouse" },
-              { src: vanity, t: "Oak vanity, stone top", p: "Brighton Townhouse" },
+              { src: wardrobe, t: " ", p: "Scarborough, ON" },
+              { src: library, t: "", p: "Oshawa, ON" },
+              { src: vanity, t: "", p: "Kitchener, ON" },
             ].map((p) => (
               <figure key={p.t}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -170,9 +172,9 @@ export default function Home() {
           <h2 className="mt-2 font-display text-3xl sm:text-4xl">Letters to the workshop.</h2>
           <div className="mt-12 grid gap-10 md:grid-cols-3">
             {[
-              { q: "It is the only room in the house I never tire of being in. The brass has gone the colour of toffee, exactly as they said it would.", a: "Eleanor M.", w: "Alfriston" },
-              { q: "Patient, exacting, and a pleasure to work with. They drew six versions before we landed on the right one — and never charged for it.", a: "James & Priya R.", w: "Bloomsbury" },
-              { q: "Eighteen months on, every drawer still closes with the same soft click. That, to me, is the whole argument.", a: "Studio Halliwell", w: "Architects, Brighton" },
+              { q: "It is the only room in the house I never tire of being in. The brass has gone the colour of toffee, exactly as they said it would.", a: "Sukhjit", w: " KItchner" },
+              { q: "Patient, exacting, and a pleasure to work with. They drew six versions before we landed on the right one — and never charged for it.", a: "Chase", w: "Toronto" },
+              { q: "Eighteen months on, every drawer still closes with the same soft click. That, to me, is the whole argument.", a: "Brenda", w: "Missisauga" },
             ].map((t) => (
               <figure key={t.a} className="border-l-2 border-clay pl-6">
                 <blockquote className="font-display text-xl leading-snug text-foreground">“{t.q}”</blockquote>
@@ -185,21 +187,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section>
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={workshop} alt="A cabinetmaker planing a board in a sunlit workshop" loading="lazy" className="aspect-[7/5] w-full object-cover" />
-          <div>
-            <p className="eyebrow">The atelier</p>
-            <h2 className="mt-2 font-display text-3xl leading-tight sm:text-4xl">Six cabinetmakers. One workshop. No subcontractors.</h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              We are small on purpose. Every commission is overseen from sketch to install by the same maker, working with material we have selected ourselves at the mill.
-            </p>
-            <Link href="/about" className="mt-8 inline-block border-b border-foreground/60 pb-0.5 text-sm hover:border-foreground">Meet the workshop →</Link>
-          </div>
-        </div>
-      </section>
+ 
     </div>
   );
 }
